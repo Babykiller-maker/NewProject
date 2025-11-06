@@ -61,8 +61,8 @@ public class BaseClass {
 //	@Parameters("browser")
 	public void beforeClass() throws IOException {
 //		String BROWSER=browser;
-//		String BROWSER = pr.toReadDataFromPropertyFile("browser");
-		String BROWSER = System.getProperty("browser");
+		String BROWSER = pr.toReadDataFromPropertyFile("browser");
+//		String BROWSER = System.getProperty("browser");
 
 		
 //		String BROWSER = System.getProperty("browser");
