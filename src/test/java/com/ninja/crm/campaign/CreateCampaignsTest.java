@@ -3,6 +3,8 @@ package com.ninja.crm.campaign;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -31,7 +33,15 @@ public class CreateCampaignsTest extends BaseClass {
 
 		// click on create campaign
 		CampaignsPage cp = new CampaignsPage(driver);
-		cp.getCreateCampaignButton().click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.elementToBeClickable(cp.getCreateCampaignButton()));
+
+		try {
+			cp.getCreateCampaignButton().click();
+		} catch (ElementClickInterceptedException e) {
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cp.getCreateCampaignButton());
+		}
+	
 
 		// Create campaigns
 		CreateCampaignsPage ccp = new CreateCampaignsPage(driver);
@@ -40,7 +50,7 @@ public class CreateCampaignsTest extends BaseClass {
 		ccp.getTargetSize().sendKeys(targetSize);
 		ccp.getCreateCampaignButton().click();
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(hp.getToastMsg()));
 		// Validate campaign create msg
 
@@ -64,7 +74,14 @@ public class CreateCampaignsTest extends BaseClass {
 
 		// click on create campaign
 		CampaignsPage cp = new CampaignsPage(driver);
-		cp.getCreateCampaignButton().click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.elementToBeClickable(cp.getCreateCampaignButton()));
+
+		try {
+			cp.getCreateCampaignButton().click();
+		} catch (ElementClickInterceptedException e) {
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cp.getCreateCampaignButton());
+		}
 
 		// Create campaign with expected date after 30 days
 		JavaUtilities jup = new JavaUtilities();
@@ -76,7 +93,7 @@ public class CreateCampaignsTest extends BaseClass {
 		ccp.getTargetSize().sendKeys(targetSize);
 		ccp.getCreateCampaignButton().click();
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(hp.getToastMsg()));
 		// Validate campaign create msg
 		String msg = hp.getToastMsg().getText();
@@ -99,7 +116,14 @@ public class CreateCampaignsTest extends BaseClass {
 
 		// click on create campaign
 		CampaignsPage cp = new CampaignsPage(driver);
-		cp.getCreateCampaignButton().click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.elementToBeClickable(cp.getCreateCampaignButton()));
+
+		try {
+			cp.getCreateCampaignButton().click();
+		} catch (ElementClickInterceptedException e) {
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", cp.getCreateCampaignButton());
+		}
 
 		// Create campaigns
 		CreateCampaignsPage ccp = new CreateCampaignsPage(driver);
@@ -108,7 +132,7 @@ public class CreateCampaignsTest extends BaseClass {
 		ccp.getTargetSize().sendKeys(targetSize);
 		ccp.getCreateCampaignButton().click();
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.elementToBeClickable(hp.getToastMsg()));
 		// Validate campaign create msg
 
