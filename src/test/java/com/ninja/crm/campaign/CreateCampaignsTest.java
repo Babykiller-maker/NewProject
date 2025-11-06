@@ -56,7 +56,7 @@ public class CreateCampaignsTest extends BaseClass {
 
 		String msg = hp.getToastMsg().getText();
 		Assert.assertTrue(msg.contains(campaignName));
-		hp.getCrossButton().click();
+		
 
 	}
 
@@ -98,7 +98,7 @@ public class CreateCampaignsTest extends BaseClass {
 		// Validate campaign create msg
 		String msg = hp.getToastMsg().getText();
 		Assert.assertTrue(msg.contains(campaignName));
-		hp.getCrossButton().click();
+		
 
 	}
 
@@ -138,7 +138,7 @@ public class CreateCampaignsTest extends BaseClass {
 
 		String msg = hp.getToastMsg().getText();
 		Assert.assertTrue(msg.contains(campaignName));
-		hp.getCrossButton().click();
+		
 
 	}
 

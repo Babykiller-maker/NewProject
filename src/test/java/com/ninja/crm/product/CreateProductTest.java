@@ -79,6 +79,6 @@ public class CreateProductTest extends BaseClass {
 		String msg = hp.getToastMsg().getText();
 		// Validate campaign create msg
 		Assert.assertTrue(msg.contains("Successfully Added"));
-		hp.getCrossButton().click();
+		
 	}
 }

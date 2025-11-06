@@ -52,6 +52,7 @@ public class BaseClass {
 	@AfterMethod(groups = "smoke")
 	public void afterMethod() {
 		HomePage hp = new HomePage(driver);
+		hp.getCrossButton().click();
 		wup.mouseHoverAction(driver, hp.getProfile());
 		hp.getLogOut().click();
 		Reporter.log("LogOut Done", true);
@@ -96,6 +97,7 @@ public class BaseClass {
 
 	@AfterClass(groups = "smoke")
 	public void afterClass() {
+		
 		driver.quit();
 		Reporter.log("Closing browser", true);
 	}
