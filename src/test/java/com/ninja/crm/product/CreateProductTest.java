@@ -9,6 +9,7 @@ import java.time.Duration;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -37,8 +38,8 @@ public class CreateProductTest extends BaseClass {
 		hp.getProductsLink().click();
 		// Click on CreateProducts
 		ProductsPage pg = new ProductsPage(driver);
-		pg.getCreateProduct().click();
-
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", pg.getCreateProduct());
+	
 		// ProductName
 		// Generate randowm number
 		JavaUtilities jup = new JavaUtilities();
