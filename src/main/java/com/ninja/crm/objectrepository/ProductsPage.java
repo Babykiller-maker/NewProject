@@ -12,7 +12,7 @@ public class ProductsPage {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(xpath = "//span[text()='Add Product']")
+	@FindBy(xpath = "//button[@class='btn btn-info']")
 	private WebElement createProduct;
 	public WebElement getCreateProduct() {
 		return createProduct;

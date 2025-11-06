@@ -13,7 +13,7 @@ public class CampaignsPage {
 	}
 	
 	
-	@FindBy(xpath = "//span[text()='Create Campaign']")
+	@FindBy(xpath = "//button[@class='btn btn-info']")
 	private WebElement createCampaignButton;
 	
 	
