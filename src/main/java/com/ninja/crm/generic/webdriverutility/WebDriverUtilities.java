@@ -14,7 +14,7 @@ public class WebDriverUtilities {
 	
 	public void mouseHoverAction(WebDriver driver,WebElement WE) {
 		Actions act = new Actions(driver);
-		act.moveToElement(WE).perform();
+		act.moveToElement(WE).click().perform();
 	}
 	
 }
