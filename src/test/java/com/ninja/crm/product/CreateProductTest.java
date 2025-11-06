@@ -72,7 +72,19 @@ public class CreateProductTest extends BaseClass {
 		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wdup.handleDropDown(cpp.getVendorId(), 2);
 		
+		
+		
 		cpp.getAddProductButton().click();	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		// wait until visible and clickable
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+		        .until(ExpectedConditions.elementToBeClickable(cpp.getAddProductButton()));
+
+		// scroll into view and click via JS to avoid overlay intercept
+		js.executeScript("arguments[0].scrollIntoView(true);", cpp.getAddProductButton());
+		Thread.sleep(500); // small delay for any animation
+		js.executeScript("arguments[0].click();", cpp.getAddProductButton());
 
 		
 		wait.until(ExpectedConditions.elementToBeClickable(hp.getToastMsg()));
