@@ -9,6 +9,7 @@ import java.time.Duration;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -38,7 +39,14 @@ public class CreateProductTest extends BaseClass {
 		hp.getProductsLink().click();
 		// Click on CreateProducts
 		ProductsPage pg = new ProductsPage(driver);
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", pg.getCreateProduct());
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(pg.getCreateProduct()));
+
+		try {
+		    pg.getCreateProduct().click();
+		} catch (ElementClickInterceptedException e) {
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", pg.getCreateProduct());
+		}
 	
 		// ProductName
 		// Generate randowm number
@@ -61,7 +69,7 @@ public class CreateProductTest extends BaseClass {
 		WebDriverUtilities wdup = new WebDriverUtilities();
 		wdup.handleDropDown(cpp.getProductCategory(), 3);
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wdup.handleDropDown(cpp.getVendorId(), 2);
 		
 		cpp.getAddProductButton().click();	
