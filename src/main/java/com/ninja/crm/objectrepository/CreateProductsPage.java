@@ -27,7 +27,7 @@ public class CreateProductsPage {
 	@FindBy(name = "vendorId")
 	private WebElement vendorId;
 	
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[text()='Add']")
 	private WebElement addProductButton;
 	public WebElement getProductName() {
 		return productName;

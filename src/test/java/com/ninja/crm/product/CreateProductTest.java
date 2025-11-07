@@ -74,7 +74,7 @@ public class CreateProductTest extends BaseClass {
 		
 		
 		
-		cpp.getAddProductButton().click();	
+			
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		// wait until visible and clickable
