@@ -72,6 +72,9 @@ public class BaseClass {
 		Map<String, Object> prefs = new HashMap<>();
 		prefs.put("profile.password_manager_leak_detection", false);
 		settings.setExperimentalOption("prefs", prefs);
+		settings.addArguments("--start-maximized");
+		settings.addArguments("--disable-gpu");
+		settings.addArguments("--remote-allow-origins=*");
 
 		// Launch the Browser
 		if (BROWSER.equals("chrome")) {
