@@ -82,7 +82,7 @@ public class HomePage {
 		return profile;
 	}
 	
-	@FindBy(xpath = "//div[@class='dropdown-item logout']")
+	@FindBy(xpath = "//div[contains(text(),'Logout')]")
 	private WebElement logOut;
 	public WebElement getLogOut() {
 		return logOut;
