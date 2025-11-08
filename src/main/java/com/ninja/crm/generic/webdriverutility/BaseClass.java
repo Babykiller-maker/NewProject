@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -54,7 +55,9 @@ public class BaseClass {
 		HomePage hp = new HomePage(driver);
 		hp.getCrossButton().click();
 		wup.mouseHoverAction(driver, hp.getProfile());
-		wup.mouseHoverAction(driver, hp.getLogOut());
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", hp.getLogOut());
+		//wup.mouseHoverAction(driver, hp.getLogOut());
 		
 		
 		Reporter.log("LogOut Done", true);
