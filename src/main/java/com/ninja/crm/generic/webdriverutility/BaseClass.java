@@ -52,9 +52,9 @@ public class BaseClass {
 	@AfterMethod(groups = "smoke")
 	public void afterMethod() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
+		Thread.sleep(500);
 		hp.getCrossButton().click();
 		wup.mouseHoverAction(driver, hp.getProfile());
-		//Thread.sleep(500);
 		hp.getLogOut().click();
 		
 		Reporter.log("LogOut Done", true);
