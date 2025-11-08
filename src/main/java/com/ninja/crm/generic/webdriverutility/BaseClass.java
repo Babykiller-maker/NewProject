@@ -54,7 +54,7 @@ public class BaseClass {
 		HomePage hp = new HomePage(driver);
 		hp.getCrossButton().click();
 		wup.mouseHoverAction(driver, hp.getProfile());
-		Thread.sleep(500);
+		//Thread.sleep(500);
 		hp.getLogOut().click();
 		
 		Reporter.log("LogOut Done", true);
