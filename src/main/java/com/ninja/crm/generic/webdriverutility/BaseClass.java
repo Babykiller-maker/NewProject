@@ -73,17 +73,22 @@ public class BaseClass {
 		
 //		String BROWSER = System.getProperty("browser");
 
-		ChromeOptions settings = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
+		// use a clean profile
+
+
+		// recommended arguments
+		options.addArguments("--disable-blink-features=AutomationControlled");
+		options.addArguments("--force-device-scale-factor=0.9");
+		options.addArguments("--high-dpi-support=1");
+		options.addArguments("user-data-dir=C:/Temp/SeleniumProfile");
 		Map<String, Object> prefs = new HashMap<>();
-		prefs.put("profile.password_manager_leak_detection", false);
-		settings.setExperimentalOption("prefs", prefs);
-		settings.addArguments("--start-maximized");
-		settings.addArguments("--disable-gpu");
-		settings.addArguments("--remote-allow-origins=*");
+	    prefs.put("profile.password_manager_leak_detection", false);
+	    options.setExperimentalOption("prefs", prefs);
 
 		// Launch the Browser
 		if (BROWSER.equals("chrome")) {
-			driver = new ChromeDriver(settings);
+			driver = new ChromeDriver(options);
 		} else if (BROWSER.equals("firefox")) {
 			driver = new FirefoxDriver();
 		} else {

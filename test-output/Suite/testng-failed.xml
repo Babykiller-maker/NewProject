@@ -21,19 +21,6 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.ninja.crm.campaign.CreateCampaignsTest -->
-      <class name="com.ninja.crm.product.CreateProductTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-          <include name="createProductWithMandatoryFieldTest"/>
-          <include name="beforeTest"/>
-          <include name="beforeClass"/>
-          <include name="afterSuite"/>
-          <include name="afterClass"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.ninja.crm.product.CreateProductTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
