@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
+import java.util.UUID;
 
 public class JavaUtilities {
 
@@ -22,5 +23,10 @@ public class JavaUtilities {
 		cal.add(Calendar.DAY_OF_MONTH,expDate);
 		String expDate1 = sim.format(cal.getTime());
 		return expDate1;
+	}
+	public String generateRandomData() {
+		UUID uniqueNum = UUID.randomUUID();
+		String ranData = uniqueNum.toString().replaceAll("[^a-zA-Z]", "");
+		return ranData;
 	}
 }

@@ -26,6 +26,8 @@ public class CreateCampaignsTest extends BaseClass {
 		ExcelUtilities eu = new ExcelUtilities();
 		String campaignName = eu.toReadDataFromExcel("Campaigns", 1, 1);
 		String targetSize = eu.toReadDataFromExcel("Campaigns", 1, 2);
+		JavaUtilities ju = new JavaUtilities();
+		String ranData = ju.generateRandomData();
 
 		// Click on campaigns link
 		HomePage hp = new HomePage(driver);
@@ -45,7 +47,7 @@ public class CreateCampaignsTest extends BaseClass {
 
 		// Create campaigns
 		CreateCampaignsPage ccp = new CreateCampaignsPage(driver);
-		ccp.getCampaignName().sendKeys(campaignName);
+		ccp.getCampaignName().sendKeys(campaignName+ranData);
 		ccp.getTargetSize().clear();
 		ccp.getTargetSize().sendKeys(targetSize);
 		ccp.getCreateCampaignButton().click();
@@ -67,6 +69,8 @@ public class CreateCampaignsTest extends BaseClass {
 		ExcelUtilities eu = new ExcelUtilities();
 		String campaignName = eu.toReadDataFromExcel("Campaigns", 1, 1);
 		String targetSize = eu.toReadDataFromExcel("Campaigns", 1, 2);
+		JavaUtilities ju = new JavaUtilities();
+		String ranData = ju.generateRandomData();
 
 		// Click on campaigns link
 		HomePage hp = new HomePage(driver);
@@ -88,7 +92,7 @@ public class CreateCampaignsTest extends BaseClass {
 		String expDate = jup.selectExpectedDate(30);
 		CreateCampaignsPage ccp = new CreateCampaignsPage(driver);
 		ccp.getExpDate().sendKeys(expDate);
-		ccp.getCampaignName().sendKeys(campaignName);
+		ccp.getCampaignName().sendKeys(campaignName+ranData);
 		ccp.getTargetSize().clear();
 		ccp.getTargetSize().sendKeys(targetSize);
 		ccp.getCreateCampaignButton().click();
@@ -109,6 +113,8 @@ public class CreateCampaignsTest extends BaseClass {
 		ExcelUtilities eu = new ExcelUtilities();
 		String campaignName = eu.toReadDataFromExcel("Campaigns", 1, 1);
 		String targetSize = eu.toReadDataFromExcel("Campaigns", 1, 2);
+		JavaUtilities ju = new JavaUtilities();
+		String ranData = ju.generateRandomData();
 
 		// Click on campaigns link
 		HomePage hp = new HomePage(driver);
@@ -127,7 +133,7 @@ public class CreateCampaignsTest extends BaseClass {
 
 		// Create campaigns
 		CreateCampaignsPage ccp = new CreateCampaignsPage(driver);
-		ccp.getCampaignName().sendKeys(campaignName);
+		ccp.getCampaignName().sendKeys(campaignName+ranData);
 		ccp.getTargetSize().clear();
 		ccp.getTargetSize().sendKeys(targetSize);
 		ccp.getCreateCampaignButton().click();
