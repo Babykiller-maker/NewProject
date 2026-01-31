@@ -50,41 +50,41 @@
       <![CDATA[Close Database Connection]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-12-19T10:26:08 IST" name="Suite" finished-at="2025-12-19T10:26:49 IST" duration-ms="40507">
+  <suite started-at="2026-01-31T10:39:51 IST" name="Suite" finished-at="2026-01-31T10:40:33 IST" duration-ms="42025">
     <groups>
       <group name="smoke">
         <method signature="CreateCampaignsTest.createCamapignsWithMandatoryFieldsTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" name="createCamapignsWithMandatoryFieldsTest" class="com.ninja.crm.campaign.CreateCampaignsTest"/>
         <method signature="CreateProductTest.createProductWithMandatoryFieldTest()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" name="createProductWithMandatoryFieldTest" class="com.ninja.crm.product.CreateProductTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-12-19T10:26:08 IST" name="Test" finished-at="2025-12-19T10:26:49 IST" duration-ms="40507">
+    <test started-at="2026-01-31T10:39:51 IST" name="Test" finished-at="2026-01-31T10:40:33 IST" duration-ms="42025">
       <class name="com.ninja.crm.product.CreateProductTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2025-12-19T10:26:39 IST" name="beforeClass" finished-at="2025-12-19T10:26:41 IST" duration-ms="2687" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2026-01-31T10:40:23 IST" name="beforeClass" finished-at="2026-01-31T10:40:25 IST" duration-ms="2008" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2025-12-19T10:26:41 IST" name="beforeMethod" finished-at="2025-12-19T10:26:43 IST" duration-ms="1640" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2026-01-31T10:40:25 IST" name="beforeMethod" finished-at="2026-01-31T10:40:27 IST" duration-ms="2419" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createProductWithMandatoryFieldTest()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2025-12-19T10:26:43 IST" name="createProductWithMandatoryFieldTest" finished-at="2025-12-19T10:26:46 IST" duration-ms="3297" status="PASS">
+        <test-method signature="createProductWithMandatoryFieldTest()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2026-01-31T10:40:27 IST" name="createProductWithMandatoryFieldTest" finished-at="2026-01-31T10:40:32 IST" duration-ms="4120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProductWithMandatoryFieldTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2025-12-19T10:26:46 IST" name="afterMethod" finished-at="2025-12-19T10:26:48 IST" duration-ms="1784" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2026-01-31T10:40:32 IST" name="afterMethod" finished-at="2026-01-31T10:40:32 IST" duration-ms="913" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LogOut Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2025-12-19T10:26:48 IST" name="afterClass" finished-at="2025-12-19T10:26:49 IST" duration-ms="668" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ninja.crm.product.CreateProductTest@7b2bbc3]" started-at="2026-01-31T10:40:32 IST" name="afterClass" finished-at="2026-01-31T10:40:33 IST" duration-ms="884" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing browser]]>
@@ -93,96 +93,96 @@
         </test-method> <!-- afterClass -->
       </class> <!-- com.ninja.crm.product.CreateProductTest -->
       <class name="com.ninja.crm.campaign.CreateCampaignsTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:08 IST" name="beforeSuite" finished-at="2025-12-19T10:26:08 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:39:51 IST" name="beforeSuite" finished-at="2026-01-31T10:39:51 IST" duration-ms="18" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Eastbilish Database Connectivity]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:08 IST" name="beforeTest" finished-at="2025-12-19T10:26:08 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:39:51 IST" name="beforeTest" finished-at="2026-01-31T10:39:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Pre-Condition]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:08 IST" name="beforeClass" finished-at="2025-12-19T10:26:17 IST" duration-ms="8406" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:39:51 IST" name="beforeClass" finished-at="2026-01-31T10:39:57 IST" duration-ms="5391" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launching browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:17 IST" name="beforeMethod" finished-at="2025-12-19T10:26:19 IST" duration-ms="2376" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:39:57 IST" name="beforeMethod" finished-at="2026-01-31T10:40:00 IST" duration-ms="2932" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCamapignsWithMandatoryFieldsTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:19 IST" name="createCamapignsWithMandatoryFieldsTest" finished-at="2025-12-19T10:26:23 IST" duration-ms="3928" status="PASS">
+        <test-method signature="createCamapignsWithMandatoryFieldsTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:00 IST" name="createCamapignsWithMandatoryFieldsTest" finished-at="2026-01-31T10:40:05 IST" duration-ms="5457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCamapignsWithMandatoryFieldsTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:23 IST" name="afterMethod" finished-at="2025-12-19T10:26:25 IST" duration-ms="1779" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:05 IST" name="afterMethod" finished-at="2026-01-31T10:40:06 IST" duration-ms="1085" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LogOut Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:25 IST" name="beforeMethod" finished-at="2025-12-19T10:26:27 IST" duration-ms="2084" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:06 IST" name="beforeMethod" finished-at="2026-01-31T10:40:08 IST" duration-ms="1757" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignsWithExpectedDateTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:27 IST" name="createCampaignsWithExpectedDateTest" finished-at="2025-12-19T10:26:30 IST" duration-ms="2507" status="PASS">
+        <test-method signature="createCampaignsWithExpectedDateTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:08 IST" name="createCampaignsWithExpectedDateTest" finished-at="2026-01-31T10:40:11 IST" duration-ms="2977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignsWithExpectedDateTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:30 IST" name="afterMethod" finished-at="2025-12-19T10:26:31 IST" duration-ms="1215" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:11 IST" name="afterMethod" finished-at="2026-01-31T10:40:13 IST" duration-ms="2037" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LogOut Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:31 IST" name="beforeMethod" finished-at="2025-12-19T10:26:32 IST" duration-ms="1473" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:13 IST" name="beforeMethod" finished-at="2026-01-31T10:40:16 IST" duration-ms="2569" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignsWithStatusTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:32 IST" name="createCampaignsWithStatusTest" finished-at="2025-12-19T10:26:34 IST" duration-ms="2221" status="PASS">
+        <test-method signature="createCampaignsWithStatusTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:16 IST" name="createCampaignsWithStatusTest" finished-at="2026-01-31T10:40:19 IST" duration-ms="3338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignsWithStatusTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:34 IST" name="afterMethod" finished-at="2025-12-19T10:26:36 IST" duration-ms="1072" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:19 IST" name="afterMethod" finished-at="2026-01-31T10:40:21 IST" duration-ms="1420" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LogOut Done]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:36 IST" name="afterClass" finished-at="2025-12-19T10:26:39 IST" duration-ms="3191" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:21 IST" name="afterClass" finished-at="2026-01-31T10:40:23 IST" duration-ms="2418" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:49 IST" name="afterTest" finished-at="2025-12-19T10:26:49 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:33 IST" name="afterTest" finished-at="2026-01-31T10:40:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Post-Condition]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2025-12-19T10:26:49 IST" name="afterSuite" finished-at="2025-12-19T10:26:49 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ninja.crm.campaign.CreateCampaignsTest@4d5d943d]" started-at="2026-01-31T10:40:33 IST" name="afterSuite" finished-at="2026-01-31T10:40:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Close Database Connection]]>
