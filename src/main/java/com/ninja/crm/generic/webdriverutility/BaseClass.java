@@ -28,7 +28,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class BaseClass {
-	public WebDriver driver = null;
+	public WebDriver driver ;
 	public static WebDriver sdriver;
 	PropertyUtilities pr = new PropertyUtilities();
 	WebDriverUtilities wup = new WebDriverUtilities();

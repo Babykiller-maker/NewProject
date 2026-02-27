@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ninja.crm.generic.fileutility.ExcelUtilities;
@@ -17,6 +18,7 @@ import com.ninja.crm.objectrepository.CampaignsPage;
 import com.ninja.crm.objectrepository.CreateCampaignsPage;
 import com.ninja.crm.objectrepository.HomePage;
 
+@Listeners(com.ninja.crm.listenersutility.ListenersPractice.class)
 public class CreateCampaignsTest extends BaseClass {
 
 	

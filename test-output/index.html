@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ninja.crm.product.CreateProductTest" class="method navigator-link" hash-for-method="createProductWithMandatoryFieldTest">createProductWithMandatoryFieldTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,11 +130,6 @@
                         <a href="#" panel-name="suite-Suite" title="com.ninja.crm.campaign.CreateCampaignsTest" class="method navigator-link" hash-for-method="createCampaignsWithStatusTest">createCampaignsWithStatusTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ninja.crm.product.CreateProductTest" class="method navigator-link" hash-for-method="createProductWithMandatoryFieldTest">createProductWithMandatoryFieldTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -133,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.ninja.crm.product.CreateProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,10 +153,15 @@
                   <a name="createProductWithMandatoryFieldTest">
                   </a> <!-- createProductWithMandatoryFieldTest -->
                   <span class="method-name">createProductWithMandatoryFieldTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.ninja.crm.product.CreateProductTest.createProductWithMandatoryFieldTest(CreateProductTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -188,7 +202,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.ninja.crm.listenersutility.ListenersImplementation&quot;/&gt;
+    &lt;listener class-name=&quot;com.ninja.crm.listenersutility.ListenersPractice&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
@@ -249,24 +263,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createCamapignsWithMandatoryFieldsTest')
 data.setCell(0, 2, 'com.ninja.crm.campaign.CreateCampaignsTest')
-data.setCell(0, 3, 5457);
+data.setCell(0, 3, 3770);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createProductWithMandatoryFieldTest')
 data.setCell(1, 2, 'com.ninja.crm.product.CreateProductTest')
-data.setCell(1, 3, 4120);
+data.setCell(1, 3, 3010);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createCampaignsWithStatusTest')
+data.setCell(2, 1, 'createCampaignsWithExpectedDateTest')
 data.setCell(2, 2, 'com.ninja.crm.campaign.CreateCampaignsTest')
-data.setCell(2, 3, 3338);
+data.setCell(2, 3, 2230);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createCampaignsWithExpectedDateTest')
+data.setCell(3, 1, 'createCampaignsWithStatusTest')
 data.setCell(3, 2, 'com.ninja.crm.campaign.CreateCampaignsTest')
-data.setCell(3, 3, 2977);
+data.setCell(3, 3, 1973);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -289,11 +303,11 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
+                <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">afterTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -312,85 +326,87 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">63 ms</span>
+                <span class="method-start">78 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">5621 ms</span>
+                <span class="method-start">4874 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createCamapignsWithMandatoryFieldsTest</span>
-                <span class="method-start">8556 ms</span>
+                <span class="method-start">6916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">14021 ms</span>
+                <span class="method-start">10697 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">15146 ms</span>
+                <span class="method-start">11849 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createCampaignsWithExpectedDateTest</span>
-                <span class="method-start">16903 ms</span>
+                <span class="method-start">13273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">19884 ms</span>
+                <span class="method-start">15508 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">21931 ms</span>
+                <span class="method-start">16373 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createCampaignsWithStatusTest</span>
-                <span class="method-start">24502 ms</span>
+                <span class="method-start">17588 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">27844 ms</span>
+                <span class="method-start">19566 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">29266 ms</span>
+                <span class="method-start">20730 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ninja.crm.product.CreateProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">31688 ms</span>
+                <span class="method-start">21498 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">33696 ms</span>
+                <span class="method-start">23086 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createProductWithMandatoryFieldTest</span>
-                <span class="method-start">36115 ms</span>
+                <span class="method-start">24551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">40244 ms</span>
+                <span class="method-start">27752 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">41159 ms</span>
+                <span class="method-start">29067 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ninja.crm.campaign.CreateCampaignsTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">42044 ms</span>
+                <span class="method-start">29654 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">42100 ms</span>
+                <span class="method-start">29709 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

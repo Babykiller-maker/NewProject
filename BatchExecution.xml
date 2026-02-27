@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="com.ninja.crm.listenersutility.ListenersImplementation"></listener>
+<listener class-name="com.ninja.crm.listenersutility.ListenersPractice"></listener>
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
